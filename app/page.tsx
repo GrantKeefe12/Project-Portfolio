@@ -7,7 +7,7 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Smart Home Automation System",
+      title: "Custom Flight Controller",
       description:
         "Developed an IoT-based home automation system using Arduino and Raspberry Pi that controls lighting, temperature, and security features through a mobile app.",
       details:
