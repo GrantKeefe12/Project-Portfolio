@@ -1,7 +1,7 @@
 // Project data
 const projects = [
   {
-    title: "Smart Home Automation System",
+    title: "Vertical Module Stack Flight Controller",
     description:
       "Developed an IoT-based home automation system using Arduino and Raspberry Pi that controls lighting, temperature, and security features through a mobile app. The system includes voice control, automated scheduling, and remote monitoring capabilities. Users can control their entire home environment from anywhere in the world.",
     images: [
