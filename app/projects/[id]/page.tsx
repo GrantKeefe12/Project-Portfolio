@@ -419,43 +419,43 @@ const projects = [
 				src: "/IMAV/Competition_team.jpg?height=400&width=600",
 				title: "The Team",
 				description:
-					"",
+					"From left to right, the photo shows Conor Spalvieri, me, Gabe David, and Ryan Berry. Not pictured is Ian Keefe, who was unable to attend the competition in person. Despite that, he remained a key member of the team and stayed connected over FaceTime for nearly the entire event. His remote support was critical throughout the competition.",
 			},
 			{
 				src: "/IMAV/drone_bottom.png?height=400&width=600",
 				title: "Final Design",
 				description:
-					"",
+					"The final design featured a Raspberry Pi 4B as the onboard computer, integrated with two cameras, an optical flow sensor, a range finder, a Pixhawk 6C autopilot, and a proximity-triggered gripper for object interaction. A notable addition was a battery hot-swap circuit that used a diode and secondary battery to maintain power to the avionics during main battery changes—critical for minimizing downtime during the competition. I was responsible for the full design and physical build of the drone, from component integration to airframe assembly. Meanwhile, the rest of the team focused on setting up and refining the simulation environment.",
 			},
 			{
 				src: "/IMAV/line_follow.mp4",
 				title: "Initial Line Following Sim",
 				description:
-					"",
+					"The first controls problem the team focused on was line following, as it formed the foundation for all other tasks and needed to be reliable. The initial Gazebo simulation was a simple environment consisting only of a flat floor with lines placed in their correct positions. This video demonstrates our approach, where we used the intersection of the line with a virtual circle projected from the drone to determine both the direction of the line and whether it was in front of or behind the drone. This method provided a consistent reference for heading correction and decision-making during navigation.",
 			},
 			{
 				src: "/IMAV/test_sim.png?height=400&width=600",
 				title: "Full Lap Simulation",
 				description:
-					"",
+					"Eventually, the team progressed to simulating the entire mission lap in Gazebo, though unfortunately no one captured a video of it. The full simulation included all major tasks required for competition: flying through gates, landing precisely on ArUco codes, picking up cones using the gripper, and imaging screens placed at specific locations. This environment allowed for end-to-end testing of navigation, perception, and control logic. It was a critical step in validating system performance before transitioning to real-world testing.",
 			},
 			{
 				src: "/IMAV/air-bnb-test.jpeg?height=400&width=600",
 				title: "Last minute testing",
 				description:
-					"",
+					"As with most robotics projects, the transition from simulation to real-world testing was not smooth—and in hindsight, it shouldn’t have been left so close to the competition. We encountered coordinate system mismatches that affected the line-following logic, which in turn made PID tuning slow and inconsistent. These issues limited the amount of productive flight time we had before the event. As a result, some last-minute testing and tuning had to be done in the Airbnb at the competition site, under less-than-ideal conditions.",
 			},
 			{
 				src: "/IMAV/IMAV-2024-Bristol-Indoor-Drone-Competition_BMS5970_.JPG?height=400&width=600",
 				title: "Final Hardware",
 				description:
-					"",
+					"The final hardware setup included all the components integrated and tested together. This photo shows the drone ready for the competition, with all sensors and no gripper attached. We did not have time to fully integrate the gripper before the event, so it was left off during the competition.",
 			},
 			{
 				src: "/IMAV/IMAV-2024-Bristol-Indoor-Drone-Competition_BMS5956_.JPG?height=400&width=600",
 				title: "Competition Day",
 				description:
-					"",
+					"The team performed well, placing 2nd among the undergraduate teams—a strong result given the challenges we faced. The competition was a lot of fun and provided a great opportunity to see how our system stacked up against others. More importantly, it clearly highlighted the true difficulty of transitioning from a controlled simulation environment to the unpredictable nature of real-world robotics.",
 			},
 		],
 		teamMembers: ["Grant Keefe", "Ryan Berry", "Conor Spalvieri", "Ian Keefe", "Gabe David"],
