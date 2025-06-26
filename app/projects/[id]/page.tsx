@@ -428,20 +428,8 @@ const projects = [
 					"",
 			},
 			{
-				src: "/IMAV/half_built.jpeg?height=400&width=600",
-				title: "Assembly in Progress",
-				description:
-					"",
-			},
-			{
 				src: "/IMAV/line_follow.mp4",
 				title: "Initial Line Following Sim",
-				description:
-					"",
-			},
-			{
-				src: "/IMAV/lines_with_noise.png?height=400&width=600",
-				title: "Noisy Floors",
 				description:
 					"",
 			},
@@ -454,6 +442,18 @@ const projects = [
 			{
 				src: "/IMAV/air-bnb-test.jpeg?height=400&width=600",
 				title: "Last minute testing",
+				description:
+					"",
+			},
+			{
+				src: "/IMAV/IMAV-2024-Bristol-Indoor-Drone-Competition_BMS5970_.JPG?height=400&width=600",
+				title: "Final Hardware",
+				description:
+					"",
+			},
+			{
+				src: "/IMAV/IMAV-2024-Bristol-Indoor-Drone-Competition_BMS5956_.JPG?height=400&width=600",
+				title: "Competition Day",
 				description:
 					"",
 			},
