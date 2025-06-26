@@ -52,43 +52,43 @@ const projects = [
 				src: "/Modular Flight Controller/iso_view.png?height=557&width=603",
 				title: "Vertical Module Stack",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"This project is a modular flight controller stack currently in the design phase, intended for use in experimental rockets and other robotics applications. The stack is composed of several custom-designed PCBs that interconnect via a central backplane using PCI-style connectors.",
 			},
 			{
 				src: "/Modular Flight Controller/FCU_module.png?height=557&width=603",
 				title: "Flight Control Unit",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"The FCU is built around an STM32H7 microcontroller and serves as the central command module. It receives state estimates from the navigation unit and generates control outputs. It includes 8 PWM channels for motor or actuator control, 2 general-purpose GPIO lines, and an SD card slot for onboard logging.",
 			},
 			{
 				src: "/Modular Flight Controller/NAV_Module.png?height=557&width=603",
 				title: "State Estimation Module",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"This board uses an STM32F4 microcontroller with an embedded IMU and barometer, and is connected to the GPS and telemetry modules. It performs sensor fusion to estimate the system’s state and transmits this information to the FCU for control decisions.",
 			},
 			{
 				src: "/Modular Flight Controller/GPS_Module.png?height=557&width=603",
 				title: "GPS Module",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"A compact board featuring the MAX-M8C GNSS module. It provides reliable positioning data to the navigation unit in a small form factor ideal for embedded applications.",
 			},
 			{
 				src: "/Modular Flight Controller/IO_Module.png?height=557&width=603",
 				title: "IO Module",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"Designed to interface with external payloads and subsystems, this board offers 8 PWM outputs and 2 independently fused pyro channels for tasks like deployment or ignition events in rocketry.",
 			},
 			{
 				src: "/Modular Flight Controller/telem_module.png?height=557&width=603",
 				title: "Telemetry Module",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"Due to tight space constraints with embedded transceivers, this board currently includes a breakout pin header for mounting an external radio module in the future, giving flexibility based on mission needs.",
 			},
 			{
 				src: "/Modular Flight Controller/backplane (2).png?height=557&width=603",
 				title: "Backplane",
 				description:
-					"blah blah blah, engineering is hard, but this rocket is harder.",
+					"The backplane uses PCI-style connectors to stack and interface all modules. It simplifies wiring and allows modular testing, hot-swapping, and future expansion of the system.",
 			},
 		],
 		teamMembers: ["Grant Keefe"],
