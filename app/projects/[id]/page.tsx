@@ -168,13 +168,13 @@ const projects = [
 				src: "/FOC_Board/gimbalpcbprototype2.jpg?height=400&width=600",
 				title: "First PCB Shortcomings",
 				description:
-					"This image highlights the programming challenges encountered with the first PCB iteration. I initially assumed the ATmega328 microcontroller would come pre-flashed with a bootloader, but it did not, which prevented uploading Arduino sketches directly. To resolve this, I had to use a separate Arduino Uno to burn the bootloader onto the chip. Since I hadn’t anticipated this issue, I didn’t include an ICSP header in the design, forcing me to solder wires directly to the SMD pins—an error that made early development unnecessarily tedious.",
+					"This image highlights the programming challenges encountered with the first PCB iteration. I initially assumed the ATmega328 microcontroller would come pre-flashed with a bootloader, but it did not, which prevented uploading Arduino sketches directly. To resolve this, I had to use a separate Arduino Uno to burn the bootloader onto the chip. Since I hadn’t anticipated this issue, I didn’t include an ICSP header in the design, forcing me to solder wires directly to the SMD pins, an error that made early development unnecessarily tedious.",
 			},
 			{
 				src: "/FOC_Board/v1_2motors.mp4",
 				title: "Proof of PCB Design",
 				description:
-					"The first custom PCB is shown controlling the speed of both gimbal motors. At this stage, the board operates in open-loop mode, simply receiving a PWM signal as input and mapping it to a motor speed by adjusting the duty cycles of the three-phase outputs per motor. It does not directly control angular velocity or respond to feedback—only the input PWM value determines the motor’s behavior. This lack of closed-loop feedback makes the system vulnerable to disturbances and limits its precision and stability.",
+					"The first custom PCB is shown controlling the speed of both gimbal motors. At this stage, the board operates in open-loop mode, simply receiving a PWM signal as input and mapping it to a motor speed by adjusting the duty cycles of the three-phase outputs per motor. It does not directly control angular velocity or respond to feedback, only the input PWM value determines the motor’s behavior. This lack of closed-loop feedback makes the system vulnerable to disturbances and limits its precision and stability.",
 			},
 			{
 				src: "/FOC_Board/feedbackv1.mp4",
@@ -192,7 +192,7 @@ const projects = [
 				src: "/FOC_Board/foc_block.png?height=400&width=600",
 				title: "Field Oriented Control",
 				description:
-					"Field-Oriented Control (FOC) is an advanced motor control technique that precisely regulates torque and magnetic flux in brushless DC motors by transforming phase currents into a rotating reference frame. Unlike simpler control strategies, FOC uses real-time feedback—typically from encoders—to dynamically adjust current inputs, enabling highly responsive and efficient control. This method provides smooth and quiet motor operation, which is particularly valuable in gimbal systems where jitter and vibration can compromise camera stability. FOC also delivers high precision in positioning, making it ideal for maintaining accurate orientation in the presence of external disturbances. Additionally, it improves energy efficiency by applying only the necessary current, reducing power consumption and heat buildup—key benefits for compact, battery-powered UAV payloads. Overall, FOC enables gimbals to achieve superior performance in stabilization, accuracy, and operational reliability.",
+					"Field-Oriented Control (FOC) is an advanced motor control technique that precisely regulates torque and magnetic flux in brushless DC motors by transforming phase currents into a rotating reference frame. Unlike simpler control strategies, FOC uses real-time feedback, typically from encoders, to dynamically adjust current inputs, enabling highly responsive and efficient control. This method provides smooth and quiet motor operation, which is particularly valuable in gimbal systems where jitter and vibration can compromise camera stability. FOC also delivers high precision in positioning, making it ideal for maintaining accurate orientation in the presence of external disturbances. Additionally, it improves energy efficiency by applying only the necessary current, reducing power consumption and heat buildup which are key benefits for compact, battery-powered UAV payloads. Overall, FOC enables gimbals to achieve superior performance in stabilization, accuracy, and operational reliability.",
 			},
 			{
 				src: "/FOC_Board/FOC_V3_cropped.mp4",
@@ -223,7 +223,7 @@ const projects = [
 				src: "/CO2_Robot/SLAM+COST.png?height=400&width=600",
 				title: "Mapping and Navigation",
 				description:
-					"A SLAM-generated occupancy grid map alongside the cost map used for real-time navigation. The SLAM map outlines the robot’s environment with walls, obstacles, and free space, while the overlaid cost map highlights inflated zones around obstacles for safe path planning. Transitioning from simulation to hardware introduced several challenges—most notably, integrating the H-bridge motor drivers with ROS2, which required careful tuning of PWM signals and handling motor direction control. A significant bug also arose from how encoder counts were handled: failing to iteratively clear the counts led to integer overflow as the robot moved, causing incorrect velocity estimates and erratic behavior. These issues emphasized the importance of hardware-aware coding practices and thorough real-world testing after simulation.",
+					"A SLAM-generated occupancy grid map alongside the cost map used for real-time navigation. The SLAM map outlines the robot’s environment with walls, obstacles, and free space, while the overlaid cost map highlights inflated zones around obstacles for safe path planning. Transitioning from simulation to hardware introduced several challenges, most notably integrating the H-bridge motor drivers with ROS2, which required careful tuning of PWM signals and handling motor direction control. A significant bug also arose from how encoder counts were handled: failing to iteratively clear the counts led to integer overflow as the robot moved, causing incorrect velocity estimates and erratic behavior. These issues emphasized the importance of hardware-aware coding practices and thorough real-world testing after simulation.",
 			},
 			{
 				src: "/CO2_Robot/full_autonomy.mp4",
@@ -315,7 +315,7 @@ const projects = [
 				src: "/Canadian_UAS/VTOL_internal.jpg?height=400&width=600",
 				title: "Urban Transport",
 				description:
-					"I created this graphic at the end of the project to clearly illustrate the design layout and overall purpose of the aircraft. It highlights the placement of key components, including the battery pack, power distribution board, onboard computer, gimbal, and passenger cabin. The visual helps communicate how each subsystem fits within the airframe and supports the mission objectives. It also reinforces the core intent of the competition—to simulate the real-world challenges of urban air mobility and autonomous passenger transport.",
+					"I created this graphic at the end of the project to clearly illustrate the design layout and overall purpose of the aircraft. It highlights the placement of key components, including the battery pack, power distribution board, onboard computer, gimbal, and passenger cabin. The visual helps communicate how each subsystem fits within the airframe and supports the mission objectives. It also reinforces the core intent of the competition, simulating the real-world challenges of urban air mobility and autonomous passenger transport.",
 			},
 			{
 				src: "/Canadian_UAS/internal.jpeg?height=400&width=600",
@@ -327,19 +327,19 @@ const projects = [
 				src: "/Canadian_UAS/internal_assem.jpeg?height=400&width=600",
 				title: "Internal Assembly",
 				description:
-					"The beauty of this design is clearly shown in this picture—none of the pieces are glued in place yet, as the entire structure is held together through precise friction fits. The interlocking geometry allows the parts to self-align and hold their shape even before adhesive is applied. This not only highlights the precision of the water-jet cutting and design work but also makes the gluing process much easier and more accurate. It's a great example of smart structural design simplifying assembly.",
+					"The beauty of this design is clearly shown in this picture, none of the pieces are glued in place yet, as the entire structure is held together through precise friction fits. The interlocking geometry allows the parts to self-align and hold their shape even before adhesive is applied. This not only highlights the precision of the water-jet cutting and design work but also makes the gluing process much easier and more accurate. It's a great example of smart structural design simplifying assembly.",
 			},
 			{
 				src: "/Canadian_UAS/batts.png?height=400&width=600",
 				title: "6S 5P Li-ion Battery Pack",
 				description:
-					"In parallel with the mechanical assembly, the electrical system was being developed—this became my main technical responsibility after our dedicated electrical lead stepped away from the team for personal reasons. My first task was designing the lithium-ion battery packs, which we chose for their superior energy density compared to LiPo alternatives. I spot-welded two 6-cell, 5-parallel (6S5P) battery packs, carefully assembling them to meet our endurance and power requirements. We opted not to include an onboard battery management system (BMS) due to weight and cost constraints. Instead, balance leads were soldered to each cell group for external monitoring and balancing. In hindsight, using a BMS on the charging end could have streamlined our workflow during competition by enabling faster, safer charging without needing to remove the batteries.",
+					"In parallel with the mechanical assembly, the electrical system was being developed and became my main technical responsibility after our dedicated electrical lead stepped away from the team for personal reasons. My first task was designing the lithium-ion battery packs, which we chose for their superior energy density compared to LiPo alternatives. I spot-welded two 6-cell, 5-parallel (6S5P) battery packs, carefully assembling them to meet our endurance and power requirements. We opted not to include an onboard battery management system (BMS) due to weight and cost constraints. Instead, balance leads were soldered to each cell group for external monitoring and balancing. In hindsight, using a BMS on the charging end could have streamlined our workflow during competition by enabling faster, safer charging without needing to remove the batteries.",
 			},
 			{
 				src: "/Canadian_UAS/pdb.jpeg?height=400&width=600",
 				title: "Power Distribution Board",
 				description:
-					"The power distribution board was my first-ever PCB design, and as a result, it had several shortcomings. The board was intended to manage system power, monitor voltage and current, and supply 12V and 5V rails via buck converters rated for 10A and 5A output, respectively. However, the buck converters underperformed under load, likely due to excessive loop lengths and not following the datasheet’s recommended layout closely enough. The current sensor also failed to integrate properly with the flight control firmware as intended. After designing a similar board for a separate project, I’ve since learned that the necessary firmware modifications are relatively straightforward. Despite these issues, many parts of the board functioned well—most notably, the low-side N-channel MOSFET switching, which proved to be a useful and reliable feature.",
+					"The power distribution board was my first-ever PCB design, and as a result, it had several shortcomings. The board was intended to manage system power, monitor voltage and current, and supply 12V and 5V rails via buck converters rated for 10A and 5A output, respectively. However, the buck converters underperformed under load, likely due to excessive loop lengths and not following the datasheet’s recommended layout closely enough. The current sensor also failed to integrate properly with the flight control firmware as intended. After designing a similar board for a separate project, I’ve since learned that the necessary firmware modifications are relatively straightforward. Despite these issues, many parts of the board functioned well, most notably, the low-side N-channel MOSFET switching, which proved to be a useful and reliable feature.",
 			},
 			{
 				src: "/Canadian_UAS/iron_bird.jpeg?height=400&width=600",
@@ -382,7 +382,7 @@ const projects = [
 				src: "/Canadian_UAS/crash.jpeg?height=400&width=600",
 				title: "Maiden Flight Crash",
 				description:
-					"This picture shows the damage sustained during our first transition test, which ended in a significant crash. The failure was caused by strong gusts that introduced external disturbances, ultimately leading to a stall mid-transition. In hindsight, we should not have flown that day—wind conditions were unfavorable, but the pressure of limited testing time before team members left for the summer influenced the decision. The combination of a tight timeline and fatigue led to poor judgment on my part, and it’s a mistake I’ve taken seriously and will not repeat.",
+					"This picture shows the damage sustained during our first transition test, which ended in a significant crash. The failure was caused by strong gusts that introduced external disturbances, ultimately leading to a stall mid-transition. In hindsight, we should not have flown that day, wind conditions were unfavorable, but the pressure of limited testing time before team members left for the summer influenced the decision. The combination of a tight timeline and fatigue led to poor judgment on my part, and it’s a mistake I’ve taken seriously and will not repeat.",
 			},
 			{
 				src: "/Canadian_UAS/repair.jpeg?height=400&width=600",
@@ -394,7 +394,7 @@ const projects = [
 				src: "/Canadian_UAS/post_crash_test.mp4",
 				title: "Post-Crash Testing",
 				description:
-					"This video captures a flight test conducted in Nova Scotia following the crash and subsequent repair efforts. It shows the aircraft back in the air, successfully completing basic maneuvers and demonstrating that critical systems—flight control, power distribution, and structural integrity—had been restored. The flight marked a major milestone in confirming the effectiveness of the repairs made under tight time and resource constraints. It was a reassuring moment for the team, proving that the project could still move forward despite the earlier setback.",
+					"This video captures a flight test conducted in Nova Scotia following the crash and subsequent repair efforts. It shows the aircraft back in the air, successfully completing basic maneuvers and demonstrating that critical systems, flight control, power distribution, and structural integrity had been restored. The flight marked a major milestone in confirming the effectiveness of the repairs made under tight time and resource constraints. It was a reassuring moment for the team, proving that the project could still move forward despite the earlier setback.",
 			},
 			{
 				src: "/Canadian_UAS/competition.jpeg?height=400&width=600",
@@ -406,14 +406,14 @@ const projects = [
 				src: "/Canadian_UAS/runway.jpeg?height=400&width=600",
 				title: "Lessons Learned",
 				description:
-					"This project taught me the importance of sound judgment under pressure—rushing flight tests in poor weather due to time constraints led to avoidable failure. It reinforced the value of thorough pre-integration testing, like iron bird setups and load testing, which help catch critical issues before final assembly. Working on my first PCB highlighted how essential good layout practices and serviceability features are, especially for power systems. I also learned that simulation alone is not enough; many issues only become apparent during physical testing. Above all, the experience underscored the importance of collaboration, as the project could not have been salvaged without the dedication and support of teammates during intense repair efforts.",
+					"This project taught me the importance of sound judgment under pressure, rushing flight tests in poor weather due to time constraints led to avoidable failure. It reinforced the value of thorough pre-integration testing, like iron bird setups and load testing, which help catch critical issues before final assembly. Working on my first PCB highlighted how essential good layout practices and serviceability features are, especially for power systems. I also learned that simulation alone is not enough; many issues only become apparent during physical testing. Above all, the experience underscored the importance of collaboration, as the project could not have been salvaged without the dedication and support of teammates during intense repair efforts.",
 			},
 		],
 		teamMembers: ["Co-Captain – Grant Keefe", "Co-Captain – Ryan Berry", "Perception – Conor Spalvieri", "Avionics, Firmware – Ian Keefe", "Navigation – Gabe David", "Aerodynamics & Propulsion – William Conway", "Structures & Manufacturing – Mateo Schwartz-Mendez", "CAD Wizard - James Gullberg", "Aerodynamics Wizard - Sam Williamson"]
 	},
 	{
 		id: 9,
-		title: "Internatioanal Micro Air Vehicles Competition",
+		title: "International Micro Air Vehicles Competition",
 		images: [
 			{
 				src: "/IMAV/Competition_team.jpg?height=400&width=600",
@@ -425,7 +425,7 @@ const projects = [
 				src: "/IMAV/drone_bottom.png?height=400&width=600",
 				title: "Final Design",
 				description:
-					"The final design featured a Raspberry Pi 4B as the onboard computer, integrated with two cameras, an optical flow sensor, a range finder, a Pixhawk 6C autopilot, and a proximity-triggered gripper for object interaction. A notable addition was a battery hot-swap circuit that used a diode and secondary battery to maintain power to the avionics during main battery changes—critical for minimizing downtime during the competition. I was responsible for the full design and physical build of the drone, from component integration to airframe assembly. Meanwhile, the rest of the team focused on setting up and refining the simulation environment.",
+					"The final design featured a Raspberry Pi 4B as the onboard computer, integrated with two cameras, an optical flow sensor, a range finder, a Pixhawk 6C autopilot, and a proximity-triggered gripper for object interaction. A notable addition was a battery hot-swap circuit that used a diode and secondary battery to maintain power to the avionics during main battery changes, critical for minimizing downtime during the competition. I was responsible for the full design and physical build of the drone, from component integration to airframe assembly. Meanwhile, the rest of the team focused on setting up and refining the simulation environment.",
 			},
 			{
 				src: "/IMAV/line_follow.mp4",
@@ -443,7 +443,7 @@ const projects = [
 				src: "/IMAV/air-bnb-test.jpeg?height=400&width=600",
 				title: "Last minute testing",
 				description:
-					"As with most robotics projects, the transition from simulation to real-world testing was not smooth—and in hindsight, it shouldn’t have been left so close to the competition. We encountered coordinate system mismatches that affected the line-following logic, which in turn made PID tuning slow and inconsistent. These issues limited the amount of productive flight time we had before the event. As a result, some last-minute testing and tuning had to be done in the Airbnb at the competition site, under less-than-ideal conditions.",
+					"As with most robotics projects, the transition from simulation to real-world testing was not smooth and in hindsight, it shouldn’t have been left so close to the competition. We encountered coordinate system mismatches that affected the line-following logic, which in turn made PID tuning slow and inconsistent. These issues limited the amount of productive flight time we had before the event. As a result, some last-minute testing and tuning had to be done in the Airbnb at the competition site, under less-than-ideal conditions.",
 			},
 			{
 				src: "/IMAV/IMAV-2024-Bristol-Indoor-Drone-Competition_BMS5970_.JPG?height=400&width=600",
@@ -455,7 +455,7 @@ const projects = [
 				src: "/IMAV/IMAV-2024-Bristol-Indoor-Drone-Competition_BMS5956_.JPG?height=400&width=600",
 				title: "Competition Day",
 				description:
-					"The team performed well, placing 2nd among the undergraduate teams—a strong result given the challenges we faced. The competition was a lot of fun and provided a great opportunity to see how our system stacked up against others. More importantly, it clearly highlighted the true difficulty of transitioning from a controlled simulation environment to the unpredictable nature of real-world robotics.",
+					"The team performed well, placing 2nd among the undergraduate teams, a strong result given the challenges we faced. The competition was a lot of fun and provided a great opportunity to see how our system stacked up against others. More importantly, it clearly highlighted the true difficulty of transitioning from a controlled simulation environment to the unpredictable nature of real-world robotics.",
 			},
 		],
 		teamMembers: ["Grant Keefe", "Ryan Berry", "Conor Spalvieri", "Ian Keefe", "Gabe David"],
