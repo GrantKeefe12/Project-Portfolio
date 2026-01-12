@@ -1,6 +1,4 @@
-"use client"
-
-import { useRouter } from "next/navigation"
+import { BackButton } from "@/components/project-navigation"
 
 const PDF_PROJECT_ID = 7 // The id for "Semi-Autonomous Robot Design"
 const PDF_URL = "/Semi-Autonomous/robotics_paper.pdf" // Update this path to your actual PDF location
@@ -462,9 +460,15 @@ const projects = [
 	},
 ]
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-	const router = useRouter()
-	const projectId = parseInt(params.id)
+export async function generateStaticParams() {
+	return projects.map((project) => ({
+		id: project.id.toString(),
+	}))
+}
+
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+	const resolvedParams = await params
+	const projectId = parseInt(resolvedParams.id)
 
 	if (projectId === PDF_PROJECT_ID) {
 		return (
@@ -477,12 +481,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 					style={{ border: "none" }}
 					title="Semi-Autonomous Robot Design PDF"
 				/>
-				<button
-					className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-					onClick={() => router.push("/")}
-				>
-					Back to Projects
-				</button>
+				<div className="mt-6">
+					<BackButton />
+				</div>
 			</main>
 		)
 	}
@@ -500,12 +501,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 				<h1 className="text-4xl font-bold bg-gray-100 px-6 py-3 rounded-lg border border-gray-300">
 					{project.title}
 				</h1>
-				<button
-					className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-					onClick={() => router.push("/")}
-				>
-					Back to Projects
-				</button>
+				<BackButton />
 			</div>
 
 			{/* Images and Paragraphs */}
