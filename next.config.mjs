@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isGhPages = process.env.DEPLOY_TARGET === 'gh-pages'
+
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/Project-Portfolio' : undefined,
+  basePath: isGhPages ? '/Project-Portfolio' : undefined,
   eslint: {
     ignoreDuringBuilds: true,
   },
