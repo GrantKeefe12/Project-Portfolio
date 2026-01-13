@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/Project-Portfolio',
+  basePath: process.env.NODE_ENV === 'production' ? '/Project-Portfolio' : undefined,
   eslint: {
     ignoreDuringBuilds: true,
   },

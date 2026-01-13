@@ -52,16 +52,16 @@ export default function Home() {
       description:
         "A custom gimbal control board based on the RP2040 MCU, featuring dual L6234PD motor drivers for BLDC control, I2C interfaces for IMU and motor encoders, and a PWM input for receiving external angle commands.",
       images: [
-        "FOC_Board/3d-render.png?height=826&width=776",
-        "FOC_Board/trace_layout-v2.0.png?height=697&width=688",
-        "FOC_Board/9gimbal-pcb-2.jpg?height=2540&width=2540",
+        "/FOC_Board/3d-render.png?height=826&width=776",
+        "/FOC_Board/trace_layout-v2.0.png?height=697&width=688",
+        "/FOC_Board/9gimbal-pcb-2.jpg?height=2540&width=2540",
       ],
     },
     {
       id: 8,
       title: "Canadian UAS Competition",
       description:
-        "Led a team in the Canadian UAS competition to develop a small-scale autonomous passenger VTOL capable of endurance flight and complex overhang landings, my main technical contributions being the designing the Li-ion battery packs, power distribution board, and full system wiring—gaining firsthand experience in the challenges of large-scale engineering coordination.",
+        "Led a team in the Canadian UAS competition to develop a small-scale autonomous passenger VTOL capable of endurance flight and complex overhang landings, my main technical contributions being the designing the Li-ion battery packs, power distribution board, and full system wiring, gaining firsthand experience in the challenges of large-scale engineering coordination.",
       images: [
         "/Canadian_UAS/VTOL_internal.jpg?height=2304&width=2880",
         "/Canadian_UAS/vtol_render.jpg?height=2304&width=2303",
@@ -70,7 +70,7 @@ export default function Home() {
     },
     {
       id: 9,
-      title: "Internatioanal Micro Air Vehicles Competition",
+      title: "International Micro Air Vehicles Competition",
       description:
         "Designed and built an autonomous indoor drone for the IMAV competition, integrating a Raspberry Pi, Pixhawk 6C, camera, rangefinder, and optical flow to enable line following, precision landing, navigation, and object retrieval.",
       images: [
@@ -98,16 +98,16 @@ export default function Home() {
       description:
         "A VTOL UAV combined the maneuverability of a quadrotor with the efficiency of fixed-wing flight, controlled by a Teensy microcontroller; while the novel design proved infeasible within the project timeline due to challenges in active stabilization and insufficient thrust-vectoring response, the project delivered stable quadcopter flight, precise wing actuation, and valuable insights into the role of passive stability in aircraft design.",
       images: [
-        "VTOL/tuning.jpg?height=1263&width=1125",
-        "VTOL/vtol_plane_mode1.jpeg?height=1536&width=1655",
-        "VTOL/build1.jpg?height=3024&width=3024",
+        "/VTOL/tuning.jpg?height=1263&width=1125",
+        "/VTOL/vtol_plane_mode1.jpeg?height=1536&width=1655",
+        "/VTOL/build1.jpg?height=3024&width=3024",
       ],
     },
     {
       id: 7,
       title: "Semi-Autonomous Robot Design",
       description:
-        "A 'rescue' competition robot featuring particle filter localization using fixed ultrasonic sensors, which I developed and tested—revealing key limitations in sparse sensor data and emphasizing the value of richer observations for accurate state estimation.",
+        "A 'rescue' competition robot featuring particle filter localization using fixed ultrasonic sensors, which I developed and tested, revealing key limitations in sparse sensor data and emphasizing the value of richer observations for accurate state estimation.",
       images: [
         "/Semi-Autonomous/robot.jpg?height=767&width=1151",
         "/Semi-Autonomous/robot2.png?height=778&width=804",

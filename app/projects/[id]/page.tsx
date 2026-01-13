@@ -407,7 +407,7 @@ const projects = [
 					"This project taught me the importance of sound judgment under pressure, rushing flight tests in poor weather due to time constraints led to avoidable failure. It reinforced the value of thorough pre-integration testing, like iron bird setups and load testing, which help catch critical issues before final assembly. Working on my first PCB highlighted how essential good layout practices and serviceability features are, especially for power systems. I also learned that simulation alone is not enough; many issues only become apparent during physical testing. Above all, the experience underscored the importance of collaboration, as the project could not have been salvaged without the dedication and support of teammates during intense repair efforts.",
 			},
 		],
-		teamMembers: ["Co-Captain – Grant Keefe", "Co-Captain – Ryan Berry", "Perception – Conor Spalvieri", "Avionics, Firmware – Ian Keefe", "Navigation – Gabe David", "Aerodynamics & Propulsion – William Conway", "Structures & Manufacturing – Mateo Schwartz-Mendez", "CAD Wizard - James Gullberg", "Aerodynamics Wizard - Sam Williamson"]
+		teamMembers: ["Co-Captain - Grant Keefe", "Co-Captain - Ryan Berry", "Perception - Conor Spalvieri", "Avionics, Firmware - Ian Keefe", "Navigation - Gabe David", "Aerodynamics & Propulsion - William Conway", "Structures & Manufacturing - Mateo Schwartz-Mendez", "CAD Wizard - James Gullberg", "Aerodynamics Wizard - Sam Williamson"]
 	},
 	{
 		id: 9,
