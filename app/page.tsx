@@ -61,7 +61,7 @@ export default function Home() {
       id: 8,
       title: "Canadian UAS Competition",
       description:
-        "Led a team in the Canadian UAS competition to develop a small-scale autonomous passenger VTOL capable of endurance flight and complex overhang landings, my main technical contributions being the designing the Li-ion battery packs, power distribution board, and full system wiring, gaining firsthand experience in the challenges of large-scale engineering coordination.",
+        "Led a team in the Canadian UAS competition to develop a small-scale autonomous passenger VTOL capable of endurance flight and complex overhang landings, my main technical contributions being the designing the Li-ion battery packs, power distribution board, and full system wiring—gaining firsthand experience in the challenges of large-scale engineering coordination.",
       images: [
         "/Canadian_UAS/VTOL_internal.jpg?height=2304&width=2880",
         "/Canadian_UAS/vtol_render.jpg?height=2304&width=2303",
@@ -70,7 +70,7 @@ export default function Home() {
     },
     {
       id: 9,
-      title: "International Micro Air Vehicles Competition",
+      title: "Internatioanal Micro Air Vehicles Competition",
       description:
         "Designed and built an autonomous indoor drone for the IMAV competition, integrating a Raspberry Pi, Pixhawk 6C, camera, rangefinder, and optical flow to enable line following, precision landing, navigation, and object retrieval.",
       images: [
@@ -107,7 +107,7 @@ export default function Home() {
       id: 7,
       title: "Semi-Autonomous Robot Design",
       description:
-        "A 'rescue' competition robot featuring particle filter localization using fixed ultrasonic sensors, which I developed and tested, revealing key limitations in sparse sensor data and emphasizing the value of richer observations for accurate state estimation.",
+        "A 'rescue' competition robot featuring particle filter localization using fixed ultrasonic sensors, which I developed and tested—revealing key limitations in sparse sensor data and emphasizing the value of richer observations for accurate state estimation.",
       images: [
         "/Semi-Autonomous/robot.jpg?height=767&width=1151",
         "/Semi-Autonomous/robot2.png?height=778&width=804",
