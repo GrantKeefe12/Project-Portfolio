@@ -50,22 +50,22 @@ export default function ArcticDeployedSensorNodePage() {
       </section>
 
       <section className="mx-auto max-w-5xl px-5 py-10 lg:px-8 lg:py-14">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Research & Development project</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Research and development project</p>
         <h1 className="mt-4 max-w-4xl text-5xl font-bold tracking-tight text-slate-950 md:text-6xl">
           Arctic deployable sensor node
         </h1>
         <div className="mt-8 grid gap-6 md:grid-cols-[0.85fr_1.15fr]">
           <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Industry Funding</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Industry funding</p>
             <p className="mt-3 text-4xl font-bold tracking-tight text-slate-950">$100,000</p>
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Partnered with Dominion Dynamics to design, build, and deploy a modular sensor node in the Arctic for environmental monitoring. 
+              Partnered with Dominion Dynamics to design, build, and deploy a modular sensor node in the Arctic for environmental monitoring.
             </p>
           </div>
           <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-bold tracking-tight text-slate-950">Research focus</h2>
             <p className="mt-4 text-base leading-8 text-slate-700">
-              The goal of the project was to extend Canadian capabilities in Arctic environmental monitoring through the deployment of modular sensor nodes. 
+              The goal of the project was to extend Canadian capabilities in Arctic environmental monitoring through the deployment of modular sensor nodes.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-700">
               Specific details of the project and capabilities are confidential, but the project involved designing and building a sensor node package, enclosure, power system, and communications system that could be deployed in the Arctic environment. The project also involved environmental validation testing and field deployment to collect sensing results.

@@ -69,7 +69,7 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
     },
     {
       id: 4,
-      title: "Field Oriented Control Board",
+      title: "Field-Oriented Control Board",
       outcome: "Custom RP2040 gimbal controller running closed-loop field-oriented BLDC motor control.",
       process: "Iterated from hand-wired prototypes through multiple PCB revisions, improving programming access, compute headroom, grounding, and encoder feedback.",
       testing: "Bench-tested open-loop drive, low-resolution feedback, magnetic encoder feedback, and smooth FOC motor operation before gimbal integration.",
@@ -284,7 +284,7 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
               Engineering Design Portfolio
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-              I have had a lot of fun during my undergrad. These projects capture a lot of what I enjoy most about engineering: designing, testing, failing, learning, and building things that move, sense, and interact with the world. 
+              I had a lot of fun during my undergraduate studies. These projects capture what I enjoy most about engineering: designing, testing, failing, learning, and building things that move, sense, and interact with the world.
             </p>
           </div>
 
