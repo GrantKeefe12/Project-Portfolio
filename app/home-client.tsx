@@ -31,19 +31,6 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
       ],
     },
     {
-      id: 11,
-      title: "Arctic Sensing Node",
-      href: "/arctic-deployed-sensor-node",
-      outcome: "Modular sensor node deployment in the Arctic for environmental monitoring.",
-      process: "",
-      testing: "",
-      images: [
-        "/Arctic_Deployed_Sensor_Node/tower_on_ice_square.jpeg",
-        "/Arctic_Deployed_Sensor_Node/testing_monitor.jpg",
-        "/Arctic_Deployed_Sensor_Node/Testing.jpg",
-      ],
-    },
-    {
       id: 1,
       title: "Nose-Deployed Drogue Rocket",
       outcome: "Modular rocket concept with thrust vectoring, canards, and nose-deployed drogue recovery.",
@@ -167,6 +154,8 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
   const aboutMe = `I'm Grant Keefe, a passionate engineer who loves building things that move, sense, and interact with the world. My interests span robotics, aerospace, embedded systems, and control. I thrive on hands-on problem solving and collaborative engineering, and I'm always looking for new challenges and opportunities to learn.`
   const profilePic = "/profile.jpg"
   const aboutCarouselImages = aboutImages.length > 0 ? aboutImages : [profilePic]
+  const dominionArticle =
+    "https://www.linkedin.com/posts/dominiondynamics_we-designed-and-deployed-icespike-now-echo-activity-7439270060990337024-vOV7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ1yhgBJRPkCNpI7lJ6Yv0Ik0NeEeDPJbU"
   const researchArticle =
     "https://smithengineering.queensu.ca/news/2026/04/smith-engineering-students-secure-550k-search-and-rescue-research-grant-for-quip-internships.html"
   const currentProject = {
@@ -175,6 +164,29 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
     description:
       "I submitted a successful grant application to the Search and Rescue New Initiatives Fund (SARNIF), securing $515,000 in funding. With additional support from Queen’s University and contributions from hardware partners, the total valuation of the project is approximately $700,000. The research focuses on the deployment and characterization of fixed-wing UAVs for maritime search and rescue operations. Over the past year, I have been conducting undergraduate research on the implementation of these systems and evaluating various detection methodologies.",
   }
+  const featuredWindows = [
+    {
+      eyebrow: "Undergraduate research",
+      href: "/research",
+      image: currentProject.image,
+      title: currentProject.title,
+      description: "Fixed-wing UAV deployment and detection methods for maritime search and rescue.",
+      ctaHref: researchArticle,
+      ctaLabel: "Smith Engineering article",
+      ctaExternal: true,
+    },
+    {
+      eyebrow: "Industry R&D",
+      href: "/arctic-deployed-sensor-node",
+      image: "/Arctic_Deployed_Sensor_Node/testing_monitor.jpg",
+      title: "Arctic Sensing Node",
+      description: "Modular sensor node deployment in the Arctic for environmental monitoring.",
+      ctaHref: dominionArticle,
+      ctaLabel: "Dominion article",
+      ctaExternal: true,
+    },
+  ]
+
   return (
     <>
       {aboutOpen && (
@@ -265,7 +277,7 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
       </header>
 
       <main className="min-h-screen bg-slate-50 text-slate-950">
-        <section className="mx-auto grid max-w-7xl gap-8 px-5 pb-12 pt-10 md:grid-cols-[1fr_360px] lg:px-8 lg:pb-16 lg:pt-14">
+        <section className="mx-auto grid max-w-7xl gap-8 px-5 pb-12 pt-10 lg:px-8 lg:pb-16 lg:pt-14 xl:grid-cols-[minmax(0,1fr)_minmax(0,720px)]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Robotics / Aerospace / Embedded Control</p>
             <h1 className="mt-4 max-w-4xl text-5xl font-bold tracking-tight text-slate-950 md:text-6xl">
@@ -276,29 +288,36 @@ export function HomeClient({ aboutImages }: HomeClientProps) {
             </p>
           </div>
 
-          <article
-            className="group rounded-lg border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
-          >
-            <Link href="/research" className="block overflow-hidden rounded-md border border-slate-200 bg-slate-100">
-              <img src={currentProject.image} alt={currentProject.title} className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
-            </Link>
-            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Undergraduate research</p>
-            <Link href="/research">
-              <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-950 transition hover:text-blue-800">{currentProject.title}</h2>
-            </Link>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              Fixed-wing UAV deployment and detection methods for maritime search and rescue.
-            </p>
-            <Link
-              href={researchArticle}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-100"
-            >
-              Smith Engineering article
-              <ExternalLink className="h-4 w-4" />
-            </Link>
-          </article>
+          <div className="grid gap-6 md:grid-cols-2 xl:gap-8">
+            {featuredWindows.map((featuredWindow) => (
+              <article
+                key={featuredWindow.title}
+                className="group h-full rounded-lg border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
+              >
+                <Link href={featuredWindow.href} className="block overflow-hidden rounded-md border border-slate-200 bg-slate-100">
+                  <img
+                    src={featuredWindow.image}
+                    alt={featuredWindow.title}
+                    className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </Link>
+                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">{featuredWindow.eyebrow}</p>
+                <Link href={featuredWindow.href}>
+                  <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-950 transition hover:text-blue-800">{featuredWindow.title}</h2>
+                </Link>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{featuredWindow.description}</p>
+                <Link
+                  href={featuredWindow.ctaHref}
+                  target={featuredWindow.ctaExternal ? "_blank" : undefined}
+                  rel={featuredWindow.ctaExternal ? "noopener noreferrer" : undefined}
+                  className="mt-5 inline-flex items-center gap-2 rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-100"
+                >
+                  {featuredWindow.ctaLabel}
+                  <ExternalLink className="h-4 w-4" />
+                </Link>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section id="projects" className="border-t border-slate-200 bg-slate-200">
