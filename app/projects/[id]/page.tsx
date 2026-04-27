@@ -10,31 +10,31 @@ const projects = [
 		title: "Nose-Deployed Drogue Rocket",
 		images: [
 			{
-				src: "/Nose-Deployed Drogue Rocket/iso_view 1.png?height=685&width=603",
+				src: "/Nose-Deployed%20Drogue%20Rocket/iso_view%201.png?height=685&width=603",
 				title: "The Prototype",
 				description:
 					"This project is a preliminary design for a rocket that has not yet been built, representing the first iteration in its development. It includes four actuated canards, a parachute hatch, a two-degree-of-freedom ball gimbal, and a deployable nose drogue to manage descent orientation. The main objective is to deepen my understanding of robust control systems in dynamic, underactuated environments. The rocket is intended to maintain stability both during powered ascent and unpowered descent using its aerodynamic control surfaces.",
 			},
 			{
-				src: "/Nose-Deployed Drogue Rocket/Gimbal.PNG?height=585&width=594",
+				src: "/Nose-Deployed%20Drogue%20Rocket/Gimbal.PNG?height=585&width=594",
 				title: "Gimbaled Thrust Vectoring",
 				description:
 					"The gimbal is a two-degree-of-freedom system actuated by two servo motors, allowing for ±7 degrees of rotation in both pitch and yaw axes. Its purpose is to vector the rocket’s motor during flight, providing active control authority over the vehicle’s orientation. By adjusting thrust direction, the gimbal enables real-time correction of instability and maintains the rocket’s desired heading. This mechanism is key to achieving robust stability under powered flight, especially in the presence of external disturbances.",
 			},
 			{
-				src: "/Nose-Deployed Drogue Rocket/nose_cone.PNG?height=650&width=760",
+				src: "/Nose-Deployed%20Drogue%20Rocket/nose_cone.PNG?height=650&width=760",
 				title: "Nose Drogue",
 				description:
 					"The nose-deployed drogue consists of four panels connected by linkages to a central rod, designed to deploy outward when released by a servo-actuated mechanism. Upon deployment, the panels shift the rocket’s center of pressure above its center of gravity, passively stabilizing it in a tail-down orientation during descent. In the current flight plan, this mechanism concludes the active portion of the mission, followed by a standard parachute deployment for recovery. Future iterations aim to build on this orientation method as a precursor to achieving a fully powered vertical landing.",
 			},
 			{
-				src: "/Nose-Deployed Drogue Rocket/CANARD_BOX.PNG?height=400&width=400",
+				src: "/Nose-Deployed%20Drogue%20Rocket/CANARD_BOX.PNG?height=400&width=400",
 				title: "Canard Box",
 				description:
 					"The canard box contains four servos, each mechanically linked to a canard axle that is supported by two ball bearings to handle the shear loads experienced during flight. Each axle is equipped with a dedicated magnetic encoder to provide real-time rotational feedback to the flight controller. This setup enhances the controller’s ability to estimate the rocket’s state with greater accuracy throughout ascent. With improved state feedback, the control system can more reliably predict vehicle dynamics and issue appropriate control commands for stable flight.",
 			},
 			{
-				src: "/Nose-Deployed Drogue Rocket/parachute_release.PNG?height=400&width=400",
+				src: "/Nose-Deployed%20Drogue%20Rocket/parachute_release.PNG?height=400&width=400",
 				title: "Parachute Deployment",
 				description:
 					"The parachute deployment mechanism uses four spring-loaded linear bearings designed to push outward when released. A servo actuates the release of the hatch panel, allowing the springs to drive the deployment motion. While the concept is simple and compact, its reliability and reusability remain uncertain and will need to be validated through physical testing.",
@@ -47,43 +47,43 @@ const projects = [
 		title: "Modular Flight Controller",
 		images: [
 			{
-				src: "/Modular Flight Controller/iso_view.png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/iso_view.png?height=557&width=603",
 				title: "Vertical Module Stack",
 				description:
 					"This project is a modular flight controller stack currently in the design phase, intended for use in experimental rockets and other robotics applications. The stack is composed of several custom-designed PCBs that interconnect via a central backplane using PCI-style connectors.",
 			},
 			{
-				src: "/Modular Flight Controller/FCU_module.png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/FCU_module.png?height=557&width=603",
 				title: "Flight Control Unit",
 				description:
 					"The FCU is built around an STM32H7 microcontroller and serves as the central command module. It receives state estimates from the navigation unit and generates control outputs. It includes 8 PWM channels for motor or actuator control, 2 general-purpose GPIO lines, and an SD card slot for onboard logging.",
 			},
 			{
-				src: "/Modular Flight Controller/NAV_Module.png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/NAV_Module.png?height=557&width=603",
 				title: "State Estimation Module",
 				description:
 					"This board uses an STM32F4 microcontroller with an embedded IMU and barometer, and is connected to the GPS and telemetry modules. It performs sensor fusion to estimate the system’s state and transmits this information to the FCU for control decisions.",
 			},
 			{
-				src: "/Modular Flight Controller/GPS_Module.png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/GPS_Module.png?height=557&width=603",
 				title: "GPS Module",
 				description:
 					"A compact board featuring the MAX-M8C GNSS module. It provides reliable positioning data to the navigation unit in a small form factor ideal for embedded applications.",
 			},
 			{
-				src: "/Modular Flight Controller/IO_Module.png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/IO_Module.png?height=557&width=603",
 				title: "IO Module",
 				description:
 					"Designed to interface with external payloads and subsystems, this board offers 8 PWM outputs and 2 independently fused pyro channels for tasks like deployment or ignition events in rocketry.",
 			},
 			{
-				src: "/Modular Flight Controller/telem_module.png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/telem_module.png?height=557&width=603",
 				title: "Telemetry Module",
 				description:
 					"Due to tight space constraints with embedded transceivers, this board currently includes a breakout pin header for mounting an external radio module in the future, giving flexibility based on mission needs.",
 			},
 			{
-				src: "/Modular Flight Controller/backplane (2).png?height=557&width=603",
+				src: "/Modular%20Flight%20Controller/backplane%20(2).png?height=557&width=603",
 				title: "Backplane",
 				description:
 					"The backplane uses PCI-style connectors to stack and interface all modules. It simplifies wiring and allows modular testing, hot-swapping, and future expansion of the system.",
@@ -249,7 +249,7 @@ const projects = [
 					"The partially assembled VTOL aircraft shows the carbon fiber frame and core components, with the wings not yet fully attached, exposing the internal structure including the front gearbox and rear belt-driven wing mechanism. The electrical system is centered around a Teensy 4.0 microcontroller, supported by a power distribution board for motors and servos. Key inputs like the IMU, GPS, and receiver feed into the system, while PWM outputs control thrust and wing actuation. The layout highlights a clean, functional integration of mechanical and electrical systems in the early stages of the build.",
 			},
 			{
-				src: "/VTOL/wings_actuated.mp4",
+				src: "/VTOL/wing_actuator_design.mp4",
 				title: "Actuating the Wings",
 				description:
 					"The wing spars are rotating in response to an RC command, driven by the servos. The movement confirms that the signal from the receiver is correctly processed and transmitted to the actuators. The rotation is steady and matches the input, showing that the linkage and control system are working as expected. This was an early test to verify basic actuation.",
@@ -364,7 +364,7 @@ const projects = [
 					"The wings were assembled using a similar process, built around two large carbon fiber wing spars and laser-cut wooden ribs for structural support. Telemetry and airspeed sensor cables were routed through the internal structure during assembly and glued into place to ensure secure and clean integration. This approach allowed the wings to maintain a lightweight yet rigid construction. Careful planning was required to ensure all internal components were positioned correctly before final bonding.",
 			},
 			{
-				src: "/Canadian_UAS/all_together.mp4",
+				src: "/Canadian_UAS/runway.jpeg?height=400&width=600",
 				title: "A Complete Aircraft",
 				description:
 					"A look at the fully assembled aircraft, showcasing the completed airframe with wings attached and all internal components integrated. The design features a sleek, aerodynamic profile with the carbon fiber skin providing both strength and weight savings. The aircraft is now ready for final system checks and flight testing, marking a significant milestone in the project.",
@@ -401,7 +401,7 @@ const projects = [
 					"The competition was an incredible experience, offering the chance to see how other teams approached the same problem with different design philosophies and technical strategies. It was both humbling and inspiring to observe the ingenuity, as well as the surprising similarities, across various solutions. Being surrounded by like-minded individuals who shared a passion for UAV design and problem-solving created a collaborative and motivating atmosphere.",
 			},
 			{
-				src: "/Canadian_UAS/runway.jpeg?height=400&width=600",
+				src: "/Canadian_UAS/all_together.mp4",
 				title: "Lessons Learned",
 				description:
 					"This project taught me the importance of sound judgment under pressure, rushing flight tests in poor weather due to time constraints led to avoidable failure. It reinforced the value of thorough pre-integration testing, like iron bird setups and load testing, which help catch critical issues before final assembly. Working on my first PCB highlighted how essential good layout practices and serviceability features are, especially for power systems. I also learned that simulation alone is not enough; many issues only become apparent during physical testing. Above all, the experience underscored the importance of collaboration, as the project could not have been salvaged without the dedication and support of teammates during intense repair efforts.",
@@ -458,7 +458,194 @@ const projects = [
 		],
 		teamMembers: ["Grant Keefe", "Ryan Berry", "Conor Spalvieri", "Ian Keefe", "Gabe David"],
 	},
+	{
+		id: 10,
+		title: "Indoor Drone Positioning System",
+		images: [
+			{
+				src: "/Hand_Gesture_Controlled_Drones/CapstoneVideo_Final.mp4",
+				title: "Final System",
+				description:
+					"The final Palm Pilot demo tied the full chain together: webcam gesture input, the ground control station, UWB positioning, EKF state estimation, and closed-loop flight. After months of subsystem debugging, the system completed repeated live demos with responsive gesture commands and stable indoor motion. Video credit: Felix Morin.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/tdoa_plot.png",
+				title: "Custom Time Difference of Arrival (TDOA) Implementation",
+				description:
+					"We chose UWB TDOA instead of motion capture to keep the system portable and lower cost. Each anchor pair produced a timing constraint, and combining many of those curves made the drone's indoor position observable without GPS.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/tag.png",
+				title: "Custom Tag Design",
+				description:
+					"The onboard tag was built around an ESP32 and DWM1000 UWB transceiver. Its job was to passively listen to anchor packets, extract precise timestamps, compute TDOA pairs, and feed measurements into the drone's estimator without adding extra radio traffic.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/anchor.png",
+				title: "Custom Anchor Design",
+				description:
+					"The anchor boards used an STM32F0 and DWM1000 to broadcast timing and position packets around the flight area. Building the anchors ourselves increased development effort, but reduced cost and gave us control over USB-C flashing, configuration, TDMA scheduling, and debug LEDs.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/TDOA_measurment_example.png",
+				title: "TDOA Testing",
+				description:
+					"Before flying, we validated the tag against known anchor geometry by holding it at measured positions and comparing expected and measured TDOA values. The measurements stayed within roughly +/-10 cm, giving us confidence to integrate them into the EKF.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/drone_platform_arch.jpg",
+				title: "Flight Control Architecture",
+				description:
+					"Once the positioning pipeline worked on the bench, it was integrated with the Crazyflie 2.1 flight stack. The onboard EKF fused IMU, barometer, and UWB TDOA updates, while the ground station streamed velocity commands and received telemetry for closed-loop control.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/xyz_position_variance_stationary.jpg",
+				title: "Stationary EKF Testing",
+				description:
+					"The first EKF check was deliberately simple: leave the drone stationary and watch the estimate over time. Low variance and minimal drift showed that the UWB updates and onboard prediction model were balanced under ideal conditions.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/xyz_position_variance_carried.jpg",
+				title: "Carried EKF Testing",
+				description:
+					"After the stationary test, we manually carried the drone around the 6 m by 4 m workspace to stress the estimate across the anchor layout. Variance increased with motion, but the state stayed bounded across the full coverage area.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/Kalman_Failure.png",
+				title: "Takeoff EKF Testing Failures",
+				description:
+					"The first takeoff tests exposed the real integration problem: vibration, noisy acceleration measurements, CPU load, and inconsistent EKF update timing could push the estimate unstable. This failure drove the estimator tuning and firmware-load reduction work.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/xyz_position_variance_takeoff_good.jpg",
+				title: "Takeoff EKF Testing Success",
+				description:
+					"After increasing EKF process noise and reducing onboard computational load, the estimate stayed stable through takeoff, hover, and landing. This was the turning point where the positioning system became usable for controlled flight.",
+			},
+			{
+				src: "/Hand_Gesture_Controlled_Drones/trajectory_xy_with_desired_circle_fit.png",
+				title: "Pure Pursuit Control Testing",
+				description:
+					"With localization stable, we tested trajectory control using pure pursuit for circular paths. The drone followed a moving lookahead point around the circle and reached an average path error of about 3.6 cm during system-level testing.",
+			},
+		],
+		teamMembers: ["Grant Keefe", "Ryan Berry", "Gabe David", "Felix Morin"],
+	},
 ]
+
+const mediaOrderByProjectId: Record<number, string[]> = {
+	1: [
+		"The Prototype",
+		"Gimbaled Thrust Vectoring",
+		"Canard Box",
+		"Nose Drogue",
+		"Parachute Deployment",
+	],
+	2: [
+		"Vertical Module Stack",
+		"Backplane",
+		"Flight Control Unit",
+		"State Estimation Module",
+		"GPS Module",
+		"Telemetry Module",
+		"IO Module",
+	],
+	3: [
+		"Full System Integration",
+		"Initial 3D-Printed Prototype",
+		"Testing the V1 Prototype",
+		"Final CAD Design",
+		"Assembly Process",
+		"A look Inside",
+		"Disturbance Test",
+		"Roll Axis Stabilization",
+	],
+	4: [
+		"Final PCB Design",
+		"Testing the 'Bare Bones'",
+		"First PCB Shortcomings",
+		"Proof of PCB Design",
+		"Introducing Feedback",
+		"PCB Mistakes",
+		"Field Oriented Control",
+		"FOC in Action",
+	],
+	5: [
+		"The Robot",
+		"Purpose of the Robot",
+		"Gazebo Simulation",
+		"Mapping and Navigation",
+		"Integrating with Hardware",
+	],
+	6: [
+		"Full VTOL Assembly",
+		"The Hardware",
+		"Tail Actuation Design",
+		"Actuating the Wings",
+		"Initial Tuning",
+		"Tuning on a Universal Joint",
+		"Lessons Learned",
+	],
+	8: [
+		"A Complete Aircraft",
+		"First Conceptual Design",
+		"Urban Transport",
+		"The Build",
+		"Internal Assembly",
+		"6S 5P Li-ion Battery Pack",
+		"Power Distribution Board",
+		"Iron Bird Testing",
+		"Internal Wiring",
+		"Semi-Monocoque Fuselage",
+		"Wing Assembly",
+		"Initial Flight Test",
+		"Maiden Flight Crash",
+		"Sleepless Repair",
+		"Post-Crash Testing",
+		"Competition Day",
+		"Lessons Learned",
+		"Dream Team",
+	],
+	9: [
+		"Final Hardware",
+		"Final Design",
+		"Initial Line Following Sim",
+		"Full Lap Simulation",
+		"Last minute testing",
+		"Competition Day",
+		"The Team",
+	],
+	10: [
+		"Final System",
+		"Custom Time Difference of Arrival (TDOA) Implementation",
+		"Custom Tag Design",
+		"Custom Anchor Design",
+		"TDOA Testing",
+		"Flight Control Architecture",
+		"Stationary EKF Testing",
+		"Carried EKF Testing",
+		"Takeoff EKF Testing Failures",
+		"Takeoff EKF Testing Success",
+		"Pure Pursuit Control Testing",
+	],
+}
+
+function getOrderedMedia(project: (typeof projects)[number]) {
+	const preferredOrder = mediaOrderByProjectId[project.id]
+
+	if (!preferredOrder) {
+		return project.images
+	}
+
+	return [...project.images].sort((a, b) => {
+		const aIndex = preferredOrder.indexOf(a.title)
+		const bIndex = preferredOrder.indexOf(b.title)
+		const normalizedAIndex = aIndex === -1 ? Number.MAX_SAFE_INTEGER : aIndex
+		const normalizedBIndex = bIndex === -1 ? Number.MAX_SAFE_INTEGER : bIndex
+
+		return normalizedAIndex - normalizedBIndex
+	})
+}
 
 export async function generateStaticParams() {
 	return projects.map((project) => ({
@@ -472,17 +659,29 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
 	if (projectId === PDF_PROJECT_ID) {
 		return (
-			<main className="container mx-auto px-4 py-12 flex flex-col items-center">
-				<h1 className="text-3xl font-bold mb-6">Semi-Autonomous Robot Design</h1>
-				<iframe
-					src={PDF_URL}
-					width="100%"
-					height="800px"
-					style={{ border: "none" }}
-					title="Semi-Autonomous Robot Design PDF"
-				/>
-				<div className="mt-6">
-					<BackButton />
+			<main className="min-h-screen bg-white text-slate-950">
+				<section className="border-b border-slate-200 bg-white">
+					<div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 md:flex-row md:items-center md:justify-between lg:px-8">
+						<div>
+							<p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Project</p>
+							<h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">Semi-Autonomous Robot Design</h1>
+						</div>
+						<BackButton />
+					</div>
+				</section>
+				<div className="mx-auto max-w-6xl px-5 py-10 lg:px-8 lg:py-14">
+					<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+						<p className="mb-5 text-base leading-7 text-slate-700">
+							Final project report first, followed by the detailed design, assembly, simulation, and testing record inside the paper.
+						</p>
+						<iframe
+							src={PDF_URL}
+							width="100%"
+							height="800px"
+							className="rounded-md border border-slate-200"
+							title="Semi-Autonomous Robot Design PDF"
+						/>
+					</div>
 				</div>
 			</main>
 		)
@@ -494,59 +693,62 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 		return <p>Project not found</p>
 	}
 
+	const orderedMedia = getOrderedMedia(project)
+
 	return (
-		<main className="container mx-auto px-4 py-12">
-			{/* Title and Back Button */}
-			<div className="flex justify-between items-center mb-8">
-				<h1 className="text-4xl font-bold bg-gray-100 px-6 py-3 rounded-lg border border-gray-300">
-					{project.title}
-				</h1>
-				<BackButton />
-			</div>
-
-			{/* Images and Paragraphs */}
-			<div className="flex flex-col gap-8">
-				{project.images.map((media, index) => (
-					<div
-						key={index}
-						className={`flex flex-col md:flex-row ${
-							index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-						} items-center gap-8`}
-					>
-						<div className="flex-1">
-							{media.src.endsWith(".mp4") ? (
-								<video controls className="rounded-lg w-full">
-									<source src={media.src} type="video/mp4" />
-									Your browser does not support the video tag.
-								</video>
-							) : (
-								<img
-									src={media.src}
-									alt={media.title ? media.title : `${project.title} image ${index + 1}`}
-									className="rounded-lg w-full"
-								/>
-							)}
-						</div>
-						<div className="flex-1">
-							{/* Show individual image title if present, otherwise fallback */}
-							<div className="mb-2">
-								<span className="font-bold text-3xl">
-									{media.title ? media.title : `Image ${index + 1}`}
-								</span>
-							</div>
-							<p className="text-xl">{media.description}</p>
-						</div>
+		<main className="min-h-screen bg-white text-slate-950">
+			<section className="border-b border-slate-200 bg-white">
+				<div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 md:flex-row md:items-center md:justify-between lg:px-8">
+					<div>
+						<p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Project</p>
+						<h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">{project.title}</h1>
 					</div>
-				))}
-			</div>
+					<BackButton />
+				</div>
+			</section>
 
-			{/* team Section */}
-			<h3 className="text-3xl font-bold mt-12 mb-2">Team Members:</h3>
-			<ul className="list-disc list-inside">
-				{project.teamMembers.map((member, index) => (
-					<li key={index} className="text-xl text-gray-800">{member}</li>
-				))}
-			</ul>
+			<div className="mx-auto max-w-6xl px-5 py-10 lg:px-8 lg:py-14">
+				<div className="space-y-8">
+					{orderedMedia.map((media, index) => (
+						<section
+							key={index}
+							className={`grid overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm lg:grid-cols-2 ${
+								index % 2 === 0 ? "" : "lg:[&>*:first-child]:order-2"
+							}`}
+						>
+							<div className="flex min-h-[300px] items-center justify-center bg-white p-4 md:p-6">
+								{media.src.endsWith(".mp4") ? (
+									<video controls className="max-h-[520px] w-full rounded-md border border-slate-200 bg-black shadow-sm">
+										<source src={media.src} type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								) : (
+									<img
+										src={media.src}
+										alt={media.title ? media.title : `${project.title} image ${index + 1}`}
+										className="max-h-[520px] max-w-full rounded-md border border-slate-200 bg-white object-contain shadow-sm"
+									/>
+								)}
+							</div>
+							<div className="flex flex-col justify-center p-6 md:p-8">
+								<h2 className="text-2xl font-bold tracking-tight text-slate-950">{media.title ? media.title : `Image ${index + 1}`}</h2>
+								<p className="mt-4 text-base leading-8 text-slate-700">{media.description}</p>
+							</div>
+						</section>
+					))}
+				</div>
+
+				<section className="mt-10 rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+					<h3 className="text-2xl font-bold tracking-tight text-slate-950">Team</h3>
+					<div className="mt-5 flex flex-wrap gap-2">
+						{project.teamMembers.map((member, index) => (
+							<span key={index} className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-700">
+								{member}
+							</span>
+						))}
+					</div>
+				</section>
+			</div>
 		</main>
 	)
 }

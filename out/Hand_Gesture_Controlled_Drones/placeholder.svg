@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Hand Gesture Controlled Drones placeholder</title>
+  <desc id="desc">Placeholder media for the Hand Gesture Controlled Drones project.</desc>
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  <rect x="48" y="48" width="1104" height="704" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <path d="M430 345h340M600 175v340M505 250l95-75 95 75M505 440l95 75 95-75" fill="none" stroke="#2563eb" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="410" cy="345" r="38" fill="#dbeafe" stroke="#2563eb" stroke-width="14"/>
+  <circle cx="790" cy="345" r="38" fill="#dbeafe" stroke="#2563eb" stroke-width="14"/>
+  <circle cx="600" cy="155" r="38" fill="#dbeafe" stroke="#2563eb" stroke-width="14"/>
+  <circle cx="600" cy="535" r="38" fill="#dbeafe" stroke="#2563eb" stroke-width="14"/>
+  <text x="600" y="650" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" fill="#0f172a">Hand Gesture Controlled Drones</text>
+  <text x="600" y="704" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#64748b">Replace this placeholder with project media</text>
+</svg>

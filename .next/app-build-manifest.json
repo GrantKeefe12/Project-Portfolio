@@ -17,10 +17,17 @@
       "static/chunks/main-app.js",
       "static/chunks/app/projects/[id]/page.js"
     ],
-    "/_not-found/page": [
+    "/arctic-deployed-sensor-node/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/arctic-deployed-sensor-node/page.css",
+      "static/chunks/app/arctic-deployed-sensor-node/page.js"
+    ],
+    "/research/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/research/page.css",
+      "static/chunks/app/research/page.js"
     ]
   }
 }
